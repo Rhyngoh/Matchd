@@ -233,31 +233,17 @@
 
 	    	// Grab the URL of the website
 	    	var currentURL = window.location.origin;
+
 	    	// AJAX post the data to the friends API. 
-	    	
-	    	$.get(currentURL + "/api/friends", function(data){
-	    		var matchesArray = [];
-				for(var j = 0; j < data.length; j++){
-					var score = 0;
-			    	for(var i = 0; i < 10; i++){
-			    		score += Math.abs(parseInt(userData.score[i]) - data[j].score[i]);
-			    	}
-			    	matchesArray.push(parseInt(score));
-				}
-				var minMatch = Math.min.apply(null, matchesArray);
-				var theMatch = matchesArray.indexOf(minMatch);
+	    	$.post(currentURL + "/api/friends", userData, function(data){
 	    		// Grab the result from the AJAX post so that the best match's name and photo are displayed.
-	    		$("#matchName").text(data[theMatch].name);
-	    		$('#matchImg').attr("src", data[theMatch].photo)
+	    		$("#matchName").text(data.name);
+	    		$('#matchImg').attr("src", data.photo)
 	    		$("#matchImg").attr("width", '100%');
 	    		$("#matchImg").attr("height", '100%');
 
 		    	// Show the modal with the best match 
-		    	$("#resultsModal").modal('toggle');	
-	    	});
-
-	    	$.post(currentURL + "/api/friends", userData, function(data){
-	    		//console.log(data);
+		    	$("#resultsModal").modal('toggle');
 	    	});
 		}
 		else
