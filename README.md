@@ -1,5 +1,5 @@
 # Matchd
-## Thinking dating is difficulty and intimidating? Find your match today with a simple survey!
+## Think dating is difficulty and intimidating? Find your match today with a simple survey!
 
 ___
 ### How to use:
