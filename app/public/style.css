@@ -1,0 +1,48 @@
+*{
+    font-family: "Merriweather", "Open Sans", serif, sans-serif;
+    color: #444;
+    background-color: #eee;
+}
+html, body {
+    height: 100%;
+    background-color: #f2d2d6;
+}
+.container, .container footer p{
+	background-color: #f2d2d6;
+}
+.jumbotron{
+	background-color: #f2d2d6;
+}
+.jumbotron .contents{
+	background-color: #f2d2d6;
+}
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+.jumbotron h4:hover{
+	background-color: #f49596;
+}
+.jumbotron h4, .btn-primary {
+    background: #f9b1c2;
+    color: #444;
+    background-color: #f9b1c2;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #f49596;
+    background-color: #f49596;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #f49596;
+    box-shadow: none;
+}
