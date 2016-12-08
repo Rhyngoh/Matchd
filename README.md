@@ -1,6 +1,5 @@
 # Matchd
 ## Think dating is difficulty and intimidating? Find your match today with a simple survey!
-
 ___
 ### How to use:
 * Click the survey button to begin the survey
